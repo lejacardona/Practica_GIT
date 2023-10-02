@@ -20,6 +20,7 @@ public class Calculator {
         // TODO code application logic here
     }
     
+
     public void sumar(){
         Scanner leer=new Scanner (System.in);
         System.out.println("Ingrese dos numeros");
@@ -35,5 +36,23 @@ public class Calculator {
         int num2=leer.nextInt();
         int resta= num1+num2;        
     }
+
+    public void multiplicar(){
+        Scanner leer= new Scanner (System.in);
+        System.out.println("Ingrese 2 numeros");
+        int numero1=leer.nextInt();
+        int numero2=leer.nextInt();
+        int producto=numero1*numero2;
+    }
+    
+    public void dividir(){
+        Scanner leer= new Scanner (System.in);
+        System.out.println("Ingrese 2 numeros");
+        int numero1=leer.nextInt();
+        int numero2=leer.nextInt();
+        int division=numero1/numero2;
+    }
+            
+
     
 }
