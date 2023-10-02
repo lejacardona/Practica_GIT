@@ -1,0 +1,5 @@
+#Ignora IDE files
+.idea/workspace.xml
+
+#Ignora compiled code
+.o, .pyc, and .class files
