@@ -17,7 +17,7 @@ public class Calculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Calculator calculadora=new Calculator();
+        Calculator calculadora=new Calculator(4, 2);
         Scanner leer=new Scanner (System.in);
         System.out.println("Ingrese dos numeros");
         int num1=leer.nextInt();
@@ -34,7 +34,12 @@ public class Calculator {
         
     }
     
-
+    public int num1=4;
+    public int num2=2;
+    
+    public Calculator(int num1,int num2) {  
+    }   
+    
     public int sumar(int num1,int num2){        
         int suma= num1+num2; 
         return suma;

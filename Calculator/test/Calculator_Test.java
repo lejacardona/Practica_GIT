@@ -19,10 +19,8 @@ public class Calculator_Test {
 
     public Calculator_Test() {
     }
-    Calculator calculadora = new Calculator();
-    int num1 = 4;
-    int num2 = 2;
-
+    Calculator calculadora = new Calculator(4, 2);
+    
     @BeforeAll
     public static void setUpClass() {
     }
@@ -41,9 +39,9 @@ public class Calculator_Test {
 
     @Test
     public void test_calculator() {
-        assertEquals(6, calculadora.sumar(num1, num2));
-        assertEquals(2, calculadora.restar(num1, num2));
-        assertEquals(8, calculadora.multiplicar(num1, num2));
-        assertEquals(2, calculadora.dividir(num1, num2));
+        assertEquals(6, calculadora.sumar(4, 2));
+        assertEquals(2, calculadora.restar(4, 2));
+        assertEquals(8, calculadora.multiplicar(4, 2));
+        assertEquals(2, calculadora.dividir(4, 2));
     }
 }

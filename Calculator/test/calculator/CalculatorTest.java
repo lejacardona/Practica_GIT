@@ -56,7 +56,7 @@ public class CalculatorTest {
         System.out.println("sumar");
         int num1 = 0;
         int num2 = 0;
-        Calculator instance = new Calculator();
+        Calculator instance = null;
         int expResult = 0;
         int result = instance.sumar(num1, num2);
         assertEquals(expResult, result);
@@ -72,7 +72,7 @@ public class CalculatorTest {
         System.out.println("restar");
         int num1 = 0;
         int num2 = 0;
-        Calculator instance = new Calculator();
+        Calculator instance = null;
         int expResult = 0;
         int result = instance.restar(num1, num2);
         assertEquals(expResult, result);
@@ -88,7 +88,7 @@ public class CalculatorTest {
         System.out.println("multiplicar");
         int num1 = 0;
         int num2 = 0;
-        Calculator instance = new Calculator();
+        Calculator instance = null;
         int expResult = 0;
         int result = instance.multiplicar(num1, num2);
         assertEquals(expResult, result);
@@ -103,8 +103,8 @@ public class CalculatorTest {
     public void testDividir() {
         System.out.println("dividir");
         int num1 = 0;
-        int num2 = 0;
-        Calculator instance = new Calculator();
+        int num2 = 1;
+        Calculator instance = null;
         double expResult = 0.0;
         double result = instance.dividir(num1, num2);
         assertEquals(expResult, result, 0);
